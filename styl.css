@@ -1,0 +1,391 @@
+    /* Global Settings */
+    
+    * {
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        box-sizing: border-box;
+    }
+    
+    body {
+        margin: 0%;
+        line-height: 1.5;
+        background: #6ab04c;
+        font-family: Poppins, Arial, Helvetica, sans-serif;
+    }
+    /* Nav Styling */
+    
+    nav {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    
+    @media only screen and (max-width: 760px) {
+        .nav {
+            width: 100%;
+        }
+    }
+    
+    @media only screen and (max-width: 760px) {
+        .zamow {
+            width: 100%;
+        }
+    }
+    
+    @media only screen and (max-width: 760px) {
+        .menu {
+            width: 100%;
+        }
+    }
+    
+    @media only screen and (max-width: 760px) {
+        .logo {
+            width: 100%;
+        }
+    }
+    
+    @media only screen and (max-width: 760px) {
+        ul {
+            width: 100%;
+        }
+    }
+    
+    .zamow {
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 100;
+        width: 100%;
+        height: 40px;
+        background-color: #22770e;
+        clear: right;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .nr {
+        margin-top: 8px;
+        text-align: center;
+    }
+    
+    .menu {
+        z-index: 100;
+        position: fixed;
+        width: 100%;
+        height: 60px;
+        background: #fff;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        margin: 0 auto;
+        top: 40px;
+        clear: right;
+    }
+    
+    .zal {
+        background-color: rgb(245, 245, 245);
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        height: 8vh;
+        padding: 2em;
+        position: relative;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    }
+    
+    .logo {
+        background-image: linear-gradient(305deg, #f16532 0, #f25935 16.67%, #f34c38 33.33%, #f23c3c 50%, #f12840 66.67%, #ef0146 83.33%, #ed004c 100%);
+        ;
+        position: relative;
+        border-radius: 30px;
+        height: 50px;
+        width: 180px;
+        left: -670px;
+        text-align: center;
+    }
+    
+    ul {
+        list-style-type: none;
+        display: flex;
+        width: 55%;
+        justify-content: space-around;
+        justify-items: center;
+    }
+    
+    li {
+        text-align: center;
+        padding-top: 14px;
+        color: white;
+    }
+    
+    a {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: black;
+        font-size: 18px;
+    }
+    /* section promo */
+    
+    .promo {
+        top: 115px;
+        z-index: -10;
+        display: flex;
+        position: relative;
+        width: 100%;
+        height: 750px;
+    }
+    
+    .promo-img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    /* section mid */
+    
+    .mid {
+        position: relative;
+        top: 100px;
+        background: white;
+        padding: 20px 0;
+        display: table;
+        width: 100%;
+    }
+    
+    .mi {
+        display: table-row;
+        text-align: center;
+    }
+    
+    .opinie2,
+    .opinie1,
+    .opinie3 {
+        display: table-cell;
+        width: 33%;
+        padding: 7px 0;
+        border-right: 1px solid #ddd;
+    }
+    
+    .ic1 {
+        width: 60px;
+        background-image: url(https://www.crazyshop.pl/app/build/images/gift.febd8401.svg);
+    }
+    
+    .ic2 {
+        background-image: url(/app/build/images/gift.febd8401.svg);
+    }
+    
+    .ic3 {
+        background-image: url(/app/build/images/guarantee-dark.a494d7a1.svg);
+    }
+    
+    .tekst1 {
+        font-size: 16px;
+        padding: 0;
+        margin: 0 0 0 10px;
+        vertical-align: middle;
+    }
+    
+    .produkt {
+        position: relative;
+        top: 100px;
+        width: 1300px;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    /* section produkt */
+    
+    .szereg {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-flow: wrap;
+    }
+    
+    .card {
+        display: grid;
+        padding: 20px;
+        grid-gap: 80px;
+        height: 550px;
+        width: 380px;
+        background: #f1f1f1;
+        margin: 10px 20px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    }
+    
+    .top-section {
+        height: 310px;
+        overflow: hidden;
+        background: #fff;
+        position: relative;
+    }
+    
+    #image-container,
+    #image-container1,
+    #image-container2,
+    #image-container3,
+    #image-container4 {
+        width: 360px;
+        height: 240px;
+    }
+    
+    .nav {
+        text-align: center;
+    }
+    
+    .nav img {
+        width: 80px;
+        height: 50px;
+        border: 1px solid #ddd;
+        margin: 8px 2px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    
+    .nav img:hover {
+        border-color: #6ab04c;
+    }
+    
+    .price {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: #6ab04c;
+        font-size: 24px;
+    }
+    
+    .product-info {
+        top: -70px;
+        width: 310px;
+        height: auto;
+        position: relative;
+        padding: 8px;
+    }
+    
+    .name {
+        text-transform: uppercase;
+        font-size: 24px;
+        color: #333;
+    }
+    
+    .dis {
+        font-size: 16px;
+        opacity: 0.7;
+    }
+    
+    .btn {
+        display: block;
+        position: relative;
+        background-image: linear-gradient(305deg, #f16532 0, #f25935 16.67%, #f34c38 33.33%, #f23c3c 50%, #f12840 66.67%, #ef0146 83.33%, #ed004c 100%);
+        text-align: center;
+        color: #fff;
+        padding: 10px;
+        bottom: -30px;
+        transition: 0.3s;
+        border-radius: 30px;
+    }
+    
+    .btn1 {
+        display: block;
+        position: relative;
+        background-image: linear-gradient(305deg, #f16532 0, #f25935 16.67%, #f34c38 33.33%, #f23c3c 50%, #f12840 66.67%, #ef0146 83.33%, #ed004c 100%);
+        text-align: center;
+        color: #fff;
+        padding: 10px;
+        bottom: -55px;
+        transition: 0.3s;
+        border-radius: 30px;
+    }
+    
+    .btn2 {
+        display: block;
+        position: relative;
+        background-image: linear-gradient(305deg, #f16532 0, #f25935 16.67%, #f34c38 33.33%, #f23c3c 50%, #f12840 66.67%, #ef0146 83.33%, #ed004c 100%);
+        text-align: center;
+        color: #fff;
+        padding: 10px;
+        bottom: -80px;
+        transition: 0.3s;
+        border-radius: 30px;
+    }
+    
+    .btn3 {
+        display: block;
+        position: relative;
+        background-image: linear-gradient(305deg, #f16532 0, #f25935 16.67%, #f34c38 33.33%, #f23c3c 50%, #f12840 66.67%, #ef0146 83.33%, #ed004c 100%);
+        text-align: center;
+        color: #fff;
+        padding: 10px;
+        bottom: -80px;
+        transition: 0.3s;
+        border-radius: 30px;
+    }
+    
+    .btn4 {
+        display: block;
+        position: relative;
+        background-image: linear-gradient(305deg, #f16532 0, #f25935 16.67%, #f34c38 33.33%, #f23c3c 50%, #f12840 66.67%, #ef0146 83.33%, #ed004c 100%);
+        text-align: center;
+        color: #fff;
+        padding: 10px;
+        bottom: -80px;
+        transition: 0.3s;
+        border-radius: 30px;
+    }
+    
+    .btn:hover {
+        background: #333;
+    }
+    /* setting footer */
+    
+    .footer {
+        width: 100%;
+        height: 28px;
+        z-index: -1;
+        position: relative;
+        bottom: -120px;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    hr {
+        border: 1px solid grey;
+        border-radius: 5px;
+    }
+    
+    @media only screen and (max-width: 760px) {
+        .nav {
+            width: 100%;
+        }
+    }
+    
+    @media only screen and (max-width: 760px) {
+        .zamow {
+            width: 100%;
+        }
+    }
+    
+    @media only screen and (max-width: 760px) {
+        .menu {
+            width: 100%;
+        }
+    }
+    
+    @media only screen and (max-width: 760px) {
+        .logo {
+            width: 100%;
+        }
+    }
+    
+    @media only screen and (max-width: 760px) {
+        ul {
+            width: 100%;
+        }
+    }
+    
+    @media only screen and (max-width:760px) {
+        .promo-img {
+            position: relative;
+            width: 50%;
+        }
+    }
