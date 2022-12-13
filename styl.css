@@ -1,0 +1,420 @@
+/* Global Settings */
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    margin: 0%;
+    line-height: 1.5;
+    background: #6ab04c;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+}
+
+ :root {
+    --blue: #702A9F;
+    --blueHover: #a380bb;
+}
+
+html {
+    font-size: 10px;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* Nav Styling */
+
+.zamow{
+background: #22770e;
+width: 100%;
+height: auto;
+position: relative;
+align-items: center;
+justify-content: center;
+text-align: center;
+
+}
+
+.nr{
+    font-size: medium;
+    color: #000000;
+    align-items: center;
+justify-content: center;
+text-align: center;
+padding: 6px;
+}
+
+
+.logo {
+    letter-spacing: -1px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: 16px;
+    position: relative;
+    text-align: center;
+    height: 50px;
+    width: 180px;
+    padding: 14px;
+    background-image: linear-gradient(305deg, #f16532 0, #f25935 16.67%, #f34c38 33.33%, #f23c3c 50%, #f12840 66.67%, #ef0146 83.33%, #ed004c 100%);
+    border-radius: 30px;
+}
+
+nav {
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+    padding: 2em;
+    position: relative;
+}
+
+ul {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    list-style-type: none;
+    display: flex;
+    width: 55%;
+    justify-content: space-around;
+    right: 0;
+}
+
+.bur {
+    z-index: 3;
+    text-decoration: none;
+    font-size: 1.7rem;
+    font-weight: bold;
+    position: relative;
+    padding: .2em;
+    color: rgb(75, 43, 43);
+}
+
+.bur::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    background-image: linear-gradient(305deg, #f16532 0, #f25935 16.67%, #f34c38 33.33%, #f23c3c 50%, #f12840 66.67%, #ef0146 83.33%, #ed004c 100%);;
+    height: .15em;
+    border-radius: 10px;
+    transition: .3s ease-in-out;
+}
+
+.bur:hover::after {
+    width: 100%;
+}
+
+
+/* Burger Styling */
+
+.burger {
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: none;
+}
+
+.line {
+    width: 3em;
+    height: .3em;
+    background: var(--blue);
+    margin: .7em;
+    border-radius: 20px;
+    transition: .3s ease-in-out;
+}
+
+@media only screen and (max-width: 1000px) {
+    .burger {
+        display: block;
+        transition: .3s ease-in-out;
+    }
+    .burger.active .line:first-child {
+        transform: translateY(-300px);
+    }
+    .burger.active .line:nth-child(2) {
+        transform: rotate(-405deg) translateY(8px);
+    }
+    .burger.active .line:nth-child(3) {
+        transform: rotate(-320deg) translateY(-10px);
+    }
+
+    ul {
+        z-index: 2;
+        position: absolute;
+        right: 0px;
+        top: 8vh;
+        background-color: var(--blue);
+        height: 92vh;
+        flex-direction: column;
+        text-align: center;
+        transform: translate(100%);
+        transition: .3s ease-in-out;
+    }
+
+
+li {
+    z-index: 2;
+}
+
+ul:active {
+    z-index: 2;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 8vh;
+    background-color: var(--blue);
+    height: 92vh;
+    flex-direction: column;
+    text-align: center;
+    transform: translate(100%);
+    transition: .3s ease-in-out;
+}
+
+    ul.active {
+        z-index: 2;
+        transform: translate(0%);
+    }
+
+    a {
+        color: whitesmoke;
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    ul {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .mi {
+        width: 100%;
+    }
+}
+
+
+/* section promo */
+
+.promo {
+    height: 550px;
+    width: 100%;
+}
+
+.promo-img {
+    background-image: url("https://www.crazyshop.pl/zasoby/flash_banner/baner_swiateczny_glowny_stary_format.jpg");
+    width: auto;
+    display: block;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* section mid */
+
+.mid {
+    position: relative;
+    background: white;
+    padding: 20px 0;
+    display: table;
+    width: 100vw;
+    top: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+}
+
+
+.mi {
+    display: table-row;
+    text-align: center;
+}
+
+
+.opinie2,
+.opinie1,
+.opinie3 {
+    display: table-cell;
+    width: 33%;
+    padding: 7px 0;
+    border-right: 1px solid #ddd;
+}
+
+.ic1 {
+    width: 60px;
+    background-image: url(https://www.crazyshop.pl/app/build/images/gift.febd8401.svg);
+}
+
+.ic2 {
+    width: 60px;
+    background-image: url(/app/build/images/gift.febd8401.svg);
+}
+
+.ic3 {
+    width: 60px;
+    background-image: url(/app/build/images/guarantee-dark.a494d7a1.svg);
+}
+
+.tekst1 {
+    font-size: 16px;
+    padding: 0;
+    margin: 0 0 0 10px;
+    vertical-align: middle;
+    color: #333;
+}
+
+.produkt {
+    position: relative;
+    top: 100px;
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/* section produkt */
+
+.szereg {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-flow: wrap;
+}
+
+.card {
+    border: #756b6b solid 1px;
+    display: grid;
+    padding: 20px;
+    grid-gap: 90px;
+    height: 600px;
+    width: 380px;
+    background: #f1f1f1;
+    margin: 10px 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.top-section {
+    width: auto;
+    height: 310px;
+    /* overflow: hidden; */
+    background: #fff;
+    position: relative;
+}
+
+#image-container,
+#image-container1,
+#image-container2,
+#image-container3,
+#image-container4 {
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+    background-size: auto;
+    background-position: center;
+    position: relative;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+}
+
+.nav {
+    text-align: center;
+}
+
+.nav img {
+    width: 80px;
+    height: 50px;
+    border: 1px solid rgb(122, 114, 114);
+    margin: 8px 2px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav img:hover {
+    border-color: #6ab04c;
+}
+
+.price {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #6ab04c;
+    font-size: 24px;
+}
+
+.product-info {
+    top: -35px;
+    min-height: 150px;
+    width: 310px;
+    height: auto;
+    /* position: relative; */
+    padding: 8px;
+}
+
+.name {
+    text-transform: uppercase;
+    font-size: 24px;
+    color: #333;
+}
+
+.dis {
+    font-size: 16px;
+    opacity: 0.7;
+}
+
+.btn, .btn1, .btn2, .btn3, .btn4 {
+    display: block;
+    position: relative;
+    background-image: linear-gradient(305deg, #f16532 0, #f25935 16.67%, #f34c38 33.33%, #f23c3c 50%, #f12840 66.67%, #ef0146 83.33%, #ed004c 100%);
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+    bottom: 125px;
+    transition: 0.3s;
+    border-radius: 30px;
+}
+
+
+.btn:hover, .btn1:hover, .btn2:hover, .btn3:hover, .btn4:hover  {
+    background: rgb(80, 35, 35);
+}
+
+
+/* setting footer */
+
+.footer {
+    width: 100%;
+    height: 28px;
+    z-index: -1;
+    position: relative;
+    bottom: -120px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.foot{
+    font-size: 12px;
+}
+
+hr {
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+
+/* @media only screen and (max-width: 760px) {
+    ul {
+        width: 100%;
+    }
+} */
+
+@media only screen and (max-width:760px) {
+    .promo-img {
+        width: auto;
+        height: 100%;
+    }
+}
