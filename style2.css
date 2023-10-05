@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    /* box-sizing: border-box; */
+}
+
+body {
+    /* position: relative; */
+    margin: 0%;
+    line-height: 1.5;
+    background: #6ab04c;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+}
+
+
+

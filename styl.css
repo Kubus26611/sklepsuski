@@ -418,3 +418,92 @@ hr {
         height: 100%;
     }
 }
+
+
+.container{
+display: flex;
+top: 150px;
+   width: 100vw; 
+   height: auto;
+   background-color: yellowgreen;
+   align-items: center;
+   justify-content: center;
+}
+
+.log-viev{
+    position: relative;
+    border-radius: 10px;
+    display: inline-block;
+    justify-content: center;
+    width: 350px;
+    height: 250px;
+    background-color: rgb(255, 255, 255);
+}
+
+.log-in-viev{
+    left: 25%;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display:grid;
+background-color: #a380bb;
+width: 50%;
+height: 100%;
+}
+
+
+.welcome{
+
+    color: rgb(137, 23, 23);
+    font-size: 16px;
+    top:-30px;
+    position:relative;
+   text-align: center;
+   
+}
+.txt{
+
+    position: absolute;
+    top: 30px;
+    color: white;
+    font-size: 14px;
+    text-align: center; 
+
+}
+
+.control-label{
+    display: block;
+    color: rgb(0, 0, 255);
+    position: relative;
+    top: -35px;
+    text-align: left;
+}
+
+.in1{
+    position: relative;
+   top: -50px;
+}
+
+.pass{
+    position: relative;
+    top: -40px;
+    color: yellow;
+}
+
+.in2{
+    position: relative;
+    top: -36px;
+    
+}
+#send{
+    color:#6ab04c;
+    font-weight:bold;
+    position: relative;
+    top: 6px;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 16px;
+    width: 150px;
+}
