@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="styl.css">
+    <link rel="stylesheet" href="style2.css">
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
@@ -14,7 +16,7 @@
 
     <nav>
 
-        <p class="logo">Święta z Suską</p>
+        <p class="logo"> <a href="index.html">Święta z Suską</href> </p>
 
 
         <ul>
@@ -33,22 +35,31 @@
 
 
     </nav>
-    <main>
         <div class="container">
             <div class="log-viev">
                 <div class="log-in-viev">
-                <h1 class="welcome"> Witam! </h1>
+                <h1 class="welcome"> Witaj! </h1>
                 <p class="txt">Zaloguj się aby przejść dalej</p>
-                <form>
+                <form method="post">
+
                 <label class="control-label" for="mail">E-mail</label><br>
-                <input type="text" class="in1" name="mail"><br>
-                <label class="pass" for="mail">Hasło</label><br>
-                <input type="text" class="in2" name="pass"><br>
+                
+                <input class="in1" name="mail" placeholder="E-mail"><br>
+                
+                <label class="control-label2" for="pass">Hasło</label><br>
+
+                <input class="in2" name="pass" placeholder="Hasło"><br>
+
              <button id="send">Zaloguj</button>
+             <a href="#" class="rem-pass">zapomniałeś hasła?</a>
+             <a href="#" class="crea-acc">Zarejestruj się</a>
             </form>
             </div>
             </div>
         </div>
     </main>
+    <div class="footer">
+        <hr><p class="foot">Copyright © 2022 kubus-najlepszy chłopak ever. Wszelkie prawa zastrzeżone.</p>
+    </div>
 </body>
 </html>

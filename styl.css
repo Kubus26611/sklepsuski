@@ -1,3 +1,5 @@
+@import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
+
 /* Global Settings */
 
 * {
@@ -8,7 +10,6 @@
 }
 
 body {
-    position: relative;
     margin: 0%;
     line-height: 1.5;
     background: #6ab04c;
@@ -109,7 +110,7 @@ ul {
     width: 100%;
 }
 
-
+#aso::after
 /* Burger Styling */
 
 .burger {
@@ -145,7 +146,7 @@ ul {
     }
 
     ul {
-        z-index: 2;
+        z-index: 4;
         position: absolute;
         right: 0px;
         top: 8vh;
@@ -159,11 +160,11 @@ ul {
 
 
 li {
-    z-index: 2;
+    z-index: 34;
 }
 
 ul:active {
-    z-index: 2;
+    z-index: index 45;;
     display: block;
     position: absolute;
     right: 0;
@@ -271,7 +272,7 @@ ul:active {
 
 .produkt {
     position: relative;
-    top: 100px;
+    top: 5px;
     height: auto;
     width: 100%;
     margin: 0 auto;
@@ -281,6 +282,7 @@ ul:active {
 /* section produkt */
 
 .szereg {
+    
     align-items: center;
     justify-content: center;
     display: flex;
@@ -386,24 +388,6 @@ ul:active {
 
 /* setting footer */
 
-.footer {
-    width: 100%;
-    height: 28px;
-    z-index: -1;
-    position: relative;
-    bottom: -120px;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.foot{
-    font-size: 12px;
-}
-
-hr {
-    border: 1px solid grey;
-    border-radius: 5px;
-}
 
 
 /* @media only screen and (max-width: 760px) {
@@ -420,90 +404,22 @@ hr {
 }
 
 
-.container{
-display: flex;
-top: 150px;
-   width: 100vw; 
-   height: auto;
-   background-color: yellowgreen;
-   align-items: center;
-   justify-content: center;
+
+.footer {
+position:static;
+  bottom: 20px;
+  width: 100%;
+  height: 20px;
+  z-index: 1; 
 }
 
-.log-viev{
-    position: relative;
-    border-radius: 10px;
-    display: inline-block;
-    justify-content: center;
-    width: 350px;
-    height: 250px;
-    background-color: rgb(255, 255, 255);
-}
-
-.log-in-viev{
-    left: 25%;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    display:grid;
-background-color: #a380bb;
-width: 50%;
-height: 100%;
-}
-
-
-.welcome{
-
-    color: rgb(137, 23, 23);
-    font-size: 16px;
-    top:-30px;
-    position:relative;
-   text-align: center;
-   
-}
-.txt{
-
-    position: absolute;
-    top: 30px;
-    color: white;
-    font-size: 14px;
-    text-align: center; 
-
-}
-
-.control-label{
-    display: block;
-    color: rgb(0, 0, 255);
-    position: relative;
-    top: -35px;
-    text-align: left;
-}
-
-.in1{
-    position: relative;
-   top: -50px;
-}
-
-.pass{
-    position: relative;
-    top: -40px;
-    color: yellow;
-}
-
-.in2{
-    position: relative;
-    top: -36px;
-    
-}
-#send{
-    color:#6ab04c;
-    font-weight:bold;
-    position: relative;
-    top: 6px;
-    font-size: 20px;
-    align-items: center;
-    justify-content: center;
+.foot{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
-    border-radius: 16px;
-    width: 150px;
+    font-size: 12px;
+}
+
+hr {
+    border: 1px solid grey;
+    border-radius: 5px;
 }
