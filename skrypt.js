@@ -42,3 +42,27 @@ burgerIcon.addEventListener('click', function() {
     burgerIcon.classList.toggle('active');
 
 })
+
+
+const search = () =>{
+    const searchbox = document.getElementById("search-item") .value.toUpperCase();
+    const storeitems = document.getElementById("szereg")
+    const product = document.querySelectorAll(".card")
+    const pname = storeitems.getElementsByTagName("name")
+
+
+for(var i=0; i < pname.length; i++){
+    let match = product[i].getElementsByTagName('name')[0];
+
+    if(match){
+        let textvalue = match.textContent || match.innerHTML
+
+        if(textvalue.toUpperCase().indexOf(searchbox) > -1) {
+            product[i].style.display = "";
+        } else{
+            product[i].style.display = "none";
+        }
+        }
+}
+}
+
