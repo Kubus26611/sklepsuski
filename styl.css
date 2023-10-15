@@ -94,6 +94,10 @@ li{
     color: black;
 }
 
+a:before{
+   text-decoration: none;
+    color: #000000;
+}
 a:visited{
  
     text-decoration: none;
