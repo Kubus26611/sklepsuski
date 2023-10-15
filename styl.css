@@ -10,6 +10,7 @@
 }
 
 body {
+    scroll-behavior: smooth;
     margin: 0%;
     line-height: 1.5;
     background: #6ab04c;
@@ -84,9 +85,18 @@ ul {
     display: flex;
     width: 55%;
     justify-content:space-around;
-    padding: 180px;
+    /* padding: 180px; */
     
 }
+
+
+a:visited{
+ 
+    text-decoration: none;
+    color: #000000;
+
+}
+
 .log-in{
 
 
@@ -175,7 +185,7 @@ ul {
 
 
 
-    ul {
+    .menu-navi {
         z-index: 3;
         position: absolute;
         right: 0;
@@ -406,11 +416,16 @@ ul {
 /* section produkt */
 
 .szereg {
-    
+    position: relative;
+    /* justify-content: center;
+    align-items: center; */
+    left: 50%;
+transform: translateX(-50%);
     align-items: center;
     justify-content: center;
     display: flex;
-    flex-flow: wrap;
+    flex-flow:wrap;
+    max-width: 1300px;
 }
 
 .card {
@@ -583,4 +598,67 @@ position:static;
 hr {
     border: 1px solid grey;
     border-radius: 5px;
+}
+
+
+.next-page{
+background: transparent;
+    margin-left: -16px;
+    margin-right: -16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+.next{
+    position: relative;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+#point-list{
+    position: relative;
+    -ms-flex-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+#point{
+    position: relative;
+    font-size:18px;
+    margin-right: 8px;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #000000;
+    cursor: pointer;
+    display: flex;
+    height: 42px;
+    justify-content: center;
+    min-height: 42px;
+    min-width: 42px;
+    width: 42px;
+    border-width: 2px;
+    border-style:solid;
+    border-color: #000000;
+}
+
+#sr{
+    scroll-behavior: smooth;
 }
